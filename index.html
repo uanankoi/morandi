@@ -4,8 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morandi</title>
+    <meta name="description" content="Morandi Colors palette">
     <!-- icon -->
-    <link rel="icon" href="">
+    <link rel="icon" href="./img/icon.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/94fbd39fca.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <style>
         body{
             margin: 0;
@@ -28,19 +35,26 @@
         }
         .hex{
             width: 920px;
-            font-size: 180px;
-            -webkit-text-stroke: 2px black;
+            /* font-size: 180px; */
+            /* -webkit-text-stroke: 2px black; */
             color: transparent;
         }
+        .hex span{
+            font-size: 180px;
+            /* font-family: 'Abril Fatface', cursive; */
+            font-family: 'Permanent Marker', cursive;
+            -webkit-text-stroke: 2px black;
+        }
         .rgb{
-            font-weight: 800;
+            font-weight: 200;
             font-size: 36px;
+            font-family: 'Long Cang', cursive;
         }
         .hex a,.rgb a{
             display: inline-block;
-            width: 30px;
-            height: 30px;
-            background-color: rgb(59, 59, 59);
+            width: 40px;
+            height: 40px;
+            /* background-color: rgb(59, 59, 59); */
             /* margin-left: 2rem; */
             cursor: pointer;
         }
@@ -59,6 +73,7 @@
             border-left: 2px black solid;
             padding-left: 2rem;
         }
+        /* 瓶子區 */
         section.main{
             width: 100vw;
             height: 40vh;
@@ -77,7 +92,7 @@
         }
         .main ul li{
             position: absolute;
-            background-color: cadetblue;
+            /* background-color: cadetblue; */
             width: 70px;
             height: 230px;
             /* top: 0; */
@@ -118,6 +133,7 @@
         li.bottle10{
             left: 700px;
         }
+        /* info All <a>區 */
         .table{
             width: 100vw;
             height: 230px;
@@ -150,6 +166,7 @@
             bottom: 20px;
             right: 20px;
         }
+        /* 告知提示區 */
         aside.copied{
             width: 100vw;
             height: 100px;
@@ -171,6 +188,7 @@
             font-size: 2rem;
             background-image: linear-gradient(45deg,pink,white);
         }
+        /* 左畫家介紹區 */
         aside.artist{
             position: fixed;
             top: 0;
@@ -212,6 +230,7 @@
             color: tomato;
             width: 190px;
         }
+        /* 右側全色卡區 */
         aside.colorChips{
             position: fixed;
             top: 0;
@@ -261,6 +280,7 @@
             background-color: rgb(255, 152, 152);
             cursor: pointer;
         }
+        /*  */
 
     </style>
 </head>
@@ -268,8 +288,8 @@
     <div class="container">
         <header>
             <div class="colorText">
-                <div class="hex">#CBBCBC <a href="####" class="copy1"></a></div>
-                <div class="rgb">RGB(125,150,111) <a href="####" class="copy2"></a></div>
+                <div class="hex"> <span>#F0E4FC</span>  <a href="####" class="copy1"><i class="far fa-copy fa-2x"></i></a></div>
+                <div class="rgb">RGB(125,150,111) <a href="####" class="copy2"><i class="fas fa-copy"></i></a></div>
             </div>
             <div class="logo">
                 <div class="nameText">
@@ -278,51 +298,173 @@
                 </div>
             </div>
         </header>
+        <!-- 瓶子區 -->
         <section class="main">
             <ul>
-               <li class="bottle1"></li>
-               <li class="bottle2"></li>
-               <li class="bottle3"></li>
-               <li class="bottle4"></li>
-               <li class="bottle5"></li>
-               <li class="bottle6"></li>
-               <li class="bottle7"></li>
-               <li class="bottle8"></li>
-               <li class="bottle9"></li>
-               <li class="bottle10"></li>
-               <li class="bottle11"></li>
-               <li class="bottle12"></li>
-               <li class="bottle13"></li>
-               <li class="bottle14"></li>
-               <li class="bottle15"></li>
-               <li class="bottle16"></li>
-               <li class="bottle17"></li>
-               <li class="bottle18"></li>
-               <li class="bottle19"></li>
-               <li class="bottle20"></li>
-               <li class="bottle21"></li>
-               <li class="bottle22"></li>
-               <li class="bottle23"></li>
-               <li class="bottle24"></li>
-               <li class="bottle25"></li>
-               <li class="bottle26"></li>
-               <li class="bottle27"></li>
-               <li class="bottle28"></li>
-               <li class="bottle29"></li>
-               <li class="bottle30"></li>
+               <li class="bottle1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60.969" height="301.009" viewBox="0 0 60.969 301.009">
+                    <path id="bottleA" data-name="Path 41" d="M2183.9,102.168h10.65v75.761l18.024,56.38V380.545s-37.184,48.651-59.806,0c-.436,1.488,0-146.236,0-146.236l14.107-56.38V102.168H2183.9" transform="translate(-2152.101 -101.667)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80.99" height="201.221" viewBox="0 0 80.99 201.221">
+                    <path id="bottleB" data-name="Path 141" d="M1668.589,1065.241s49.529-28.616,72.238,0c-1.514-1.669,7.57,178.157,7.57,178.157s-67.265,20.822-79.808,0C1668.157,1241.5,1668.589,1065.241,1668.589,1065.241Z" transform="translate(-1667.926 -1051.964)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="71.042" height="286.044" viewBox="0 0 71.042 286.044">
+                    <path id="bottleC" data-name="Path 143" d="M10790.712,8299.012s-23.982-7.188-28.779,0c-.424.994,0,77.038,0,77.038l-16.7,79.8v115.838s54.423,20.543,69.181,0c1.845-2.369,0-115.838,0-115.838l-23.7-79.8Z" transform="translate(-10744.733 -8295.309)" stroke="#707070" stroke-width="1"/>
+                  </svg>                  
+               </li>
+               <li class="bottle4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="86.033" height="201.052" viewBox="0 0 86.033 201.052">
+                    <path id="bottleD" data-name="Path 165" d="M2188.486,28.644h-14.491l-5.411,83.389s-23.337,24.141-24.485,29.32,8.788,76.047,8.788,76.047,44.99,25.3,72.362,0c.527.774,4.5-71.333,3.635-76.047s-25.609-29.32-25.609-29.32l-5.916-83.389h-8.873" transform="translate(-2143.49 -28.144)" stroke="#707070" stroke-width="1"/>
+                  </svg>                  
+               </li>
+               <li class="bottle5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="130.998" height="241.077" viewBox="0 0 130.998 241.077">
+                    <path id="bottleE" data-name="Path 166" d="M2214.7,102.168h-23.076v60.609l-39.052,45.1V324.869s80.566,38.921,129.58,0c.945,1.19,0-116.989,0-116.989l-30.568-45.1V102.168H2214.7" transform="translate(-2152.069 -101.668)" stroke="#707070" stroke-width="1"/>
+                  </svg>                  
+               </li>
+               <li class="bottle6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="111.686" height="201.019" viewBox="0 0 111.686 201.019">
+                    <path id="bottleF" data-name="Path 167" d="M10615.343,9705.152c-9.617-14.795,35.461,0,35.461,0s-14.425,34.382,0,49.794c.6-.612,37.87,13.565,37.87,13.565v117.12l-15.026,12.945-94.974-9.247s4.208-116.5,0-120.818c1.8,0,10.819-9.864,10.819-9.864s22.841,0,25.85-3.7C10615.343,9753.1,10624.956,9719.95,10615.343,9705.152Z" transform="translate(-10577.488 -9698.077)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle7">
+                <svg xmlns="http://www.w3.org/2000/svg" width="111.137" height="301.111" viewBox="0 0 111.137 301.111">
+                    <path id="bottleG" data-name="Path 168" d="M10548.344,8263.729s28.213-15.425,39.5,0c1.881-3.122,0,31.476,0,31.476l34.779,116.215v128.336s-56.623,38.514-108.713,0c-2.895-1.427,0-128.336,0-128.336l34.434-116.215Z" transform="translate(-10511.986 -8256.343)" stroke="#707070" stroke-width="1"/>
+                  </svg>                  
+               </li>
+               <li class="bottle8">
+                <svg xmlns="http://www.w3.org/2000/svg" width="111.024" height="291.092" viewBox="0 0 111.024 291.092">
+                    <path id="bottleH" data-name="Path 169" d="M10779.664,9516.121h15.834l4.759,140.9s35.667,9.6,38.563,18.148v115.292s-43.382,35.228-107,0c0,0-6.752-116.361,0-115.292-1.934-3.2,40.484-18.148,40.484-18.148Z" transform="translate(-10728.295 -9515.621)" stroke="#707070" stroke-width="1"/>
+                  </svg>                  
+               </li>
+               <li class="bottle9">
+                <svg xmlns="http://www.w3.org/2000/svg" width="121.002" height="301.076" viewBox="0 0 121.002 301.076">
+                    <path id="bottleI" data-name="Path 170" d="M2211.414,28.644h-13.852l-8.944,125.083-36.048,43.979V311.777s74.368,37.951,119.612,0c.872,1.161,0-114.071,0-114.071l-36.323-43.979L2226.08,28.644h-14.667" transform="translate(-2152.069 -28.144)" stroke="#707070" stroke-width="1"/>
+                  </svg>                  
+               </li>
+               <li class="bottle10">
+                <svg xmlns="http://www.w3.org/2000/svg" width="81.306" height="291.025" viewBox="0 0 81.306 291.025">
+                    <path id="bottleJ" data-name="Path 171" d="M10760.3,9780.97s-14.415-109.275-37.905-65.347c-.636,0-20.3,250.894-20.3,250.894s49.2,64.562,80,0C10781.464,9966.517,10760.3,9780.97,10760.3,9780.97Z" transform="translate(-10701.586 -9704.703)" stroke="#707070" stroke-width="1"/>
+                  </svg>                  
+               </li>
+               <li class="bottle11">
+                <svg xmlns="http://www.w3.org/2000/svg" width="150.999" height="201.064" viewBox="0 0 150.999 201.064">
+                    <path id="bottleK" data-name="Path 172" d="M2230.883,102.168h26.626s-11.265,28.484,0,50.507,45.06,37.587,45.06,37.587v97.491s-92.96,32.434-149.516,0c-1.09.992,0-97.491,0-97.491s26.453-15.563,35.271-37.587,0-50.507,0-50.507h42.559" transform="translate(-2152.07 -101.668)" stroke="#707070" stroke-width="1"/>
+                  </svg>                  
+               </li>
+               <li class="bottle12">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60.969" height="301.009" viewBox="0 0 60.969 301.009">
+                    <path id="bottleA" data-name="Path 41" d="M2183.9,102.168h10.65v75.761l18.024,56.38V380.545s-37.184,48.651-59.806,0c-.436,1.488,0-146.236,0-146.236l14.107-56.38V102.168H2183.9" transform="translate(-2152.101 -101.667)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle13">
+                <svg xmlns="http://www.w3.org/2000/svg" width="111.024" height="291.092" viewBox="0 0 111.024 291.092">
+                    <path id="bottleH" data-name="Path 169" d="M10779.664,9516.121h15.834l4.759,140.9s35.667,9.6,38.563,18.148v115.292s-43.382,35.228-107,0c0,0-6.752-116.361,0-115.292-1.934-3.2,40.484-18.148,40.484-18.148Z" transform="translate(-10728.295 -9515.621)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle14">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80.99" height="201.221" viewBox="0 0 80.99 201.221">
+                    <path id="bottleB" data-name="Path 141" d="M1668.589,1065.241s49.529-28.616,72.238,0c-1.514-1.669,7.57,178.157,7.57,178.157s-67.265,20.822-79.808,0C1668.157,1241.5,1668.589,1065.241,1668.589,1065.241Z" transform="translate(-1667.926 -1051.964)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle15">
+                <svg xmlns="http://www.w3.org/2000/svg" width="130.998" height="241.077" viewBox="0 0 130.998 241.077">
+                    <path id="bottleE" data-name="Path 166" d="M2214.7,102.168h-23.076v60.609l-39.052,45.1V324.869s80.566,38.921,129.58,0c.945,1.19,0-116.989,0-116.989l-30.568-45.1V102.168H2214.7" transform="translate(-2152.069 -101.668)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="71.042" height="286.044" viewBox="0 0 71.042 286.044">
+                    <path id="bottleC" data-name="Path 143" d="M10790.712,8299.012s-23.982-7.188-28.779,0c-.424.994,0,77.038,0,77.038l-16.7,79.8v115.838s54.423,20.543,69.181,0c1.845-2.369,0-115.838,0-115.838l-23.7-79.8Z" transform="translate(-10744.733 -8295.309)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle17">
+                <svg xmlns="http://www.w3.org/2000/svg" width="111.024" height="291.092" viewBox="0 0 111.024 291.092">
+                    <path id="bottleH" data-name="Path 169" d="M10779.664,9516.121h15.834l4.759,140.9s35.667,9.6,38.563,18.148v115.292s-43.382,35.228-107,0c0,0-6.752-116.361,0-115.292-1.934-3.2,40.484-18.148,40.484-18.148Z" transform="translate(-10728.295 -9515.621)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle18">
+                <svg xmlns="http://www.w3.org/2000/svg" width="111.137" height="301.111" viewBox="0 0 111.137 301.111">
+                    <path id="bottleG" data-name="Path 168" d="M10548.344,8263.729s28.213-15.425,39.5,0c1.881-3.122,0,31.476,0,31.476l34.779,116.215v128.336s-56.623,38.514-108.713,0c-2.895-1.427,0-128.336,0-128.336l34.434-116.215Z" transform="translate(-10511.986 -8256.343)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle19">
+                <svg xmlns="http://www.w3.org/2000/svg" width="81.306" height="291.025" viewBox="0 0 81.306 291.025">
+                    <path id="bottleJ" data-name="Path 171" d="M10760.3,9780.97s-14.415-109.275-37.905-65.347c-.636,0-20.3,250.894-20.3,250.894s49.2,64.562,80,0C10781.464,9966.517,10760.3,9780.97,10760.3,9780.97Z" transform="translate(-10701.586 -9704.703)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle20">
+                <svg xmlns="http://www.w3.org/2000/svg" width="130.998" height="241.077" viewBox="0 0 130.998 241.077">
+                    <path id="bottleE" data-name="Path 166" d="M2214.7,102.168h-23.076v60.609l-39.052,45.1V324.869s80.566,38.921,129.58,0c.945,1.19,0-116.989,0-116.989l-30.568-45.1V102.168H2214.7" transform="translate(-2152.069 -101.668)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle21">
+                <svg xmlns="http://www.w3.org/2000/svg" width="121.002" height="301.076" viewBox="0 0 121.002 301.076">
+                    <path id="bottleI" data-name="Path 170" d="M2211.414,28.644h-13.852l-8.944,125.083-36.048,43.979V311.777s74.368,37.951,119.612,0c.872,1.161,0-114.071,0-114.071l-36.323-43.979L2226.08,28.644h-14.667" transform="translate(-2152.069 -28.144)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle22">
+                <svg xmlns="http://www.w3.org/2000/svg" width="150.999" height="201.064" viewBox="0 0 150.999 201.064">
+                    <path id="bottleK" data-name="Path 172" d="M2230.883,102.168h26.626s-11.265,28.484,0,50.507,45.06,37.587,45.06,37.587v97.491s-92.96,32.434-149.516,0c-1.09.992,0-97.491,0-97.491s26.453-15.563,35.271-37.587,0-50.507,0-50.507h42.559" transform="translate(-2152.07 -101.668)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle23">
+                <svg xmlns="http://www.w3.org/2000/svg" width="111.137" height="301.111" viewBox="0 0 111.137 301.111">
+                    <path id="bottleG" data-name="Path 168" d="M10548.344,8263.729s28.213-15.425,39.5,0c1.881-3.122,0,31.476,0,31.476l34.779,116.215v128.336s-56.623,38.514-108.713,0c-2.895-1.427,0-128.336,0-128.336l34.434-116.215Z" transform="translate(-10511.986 -8256.343)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle24">
+                <svg xmlns="http://www.w3.org/2000/svg" width="86.033" height="201.052" viewBox="0 0 86.033 201.052">
+                    <path id="bottleD" data-name="Path 165" d="M2188.486,28.644h-14.491l-5.411,83.389s-23.337,24.141-24.485,29.32,8.788,76.047,8.788,76.047,44.99,25.3,72.362,0c.527.774,4.5-71.333,3.635-76.047s-25.609-29.32-25.609-29.32l-5.916-83.389h-8.873" transform="translate(-2143.49 -28.144)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle25">
+                <svg xmlns="http://www.w3.org/2000/svg" width="111.686" height="201.019" viewBox="0 0 111.686 201.019">
+                    <path id="bottleF" data-name="Path 167" d="M10615.343,9705.152c-9.617-14.795,35.461,0,35.461,0s-14.425,34.382,0,49.794c.6-.612,37.87,13.565,37.87,13.565v117.12l-15.026,12.945-94.974-9.247s4.208-116.5,0-120.818c1.8,0,10.819-9.864,10.819-9.864s22.841,0,25.85-3.7C10615.343,9753.1,10624.956,9719.95,10615.343,9705.152Z" transform="translate(-10577.488 -9698.077)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle26">
+                <svg xmlns="http://www.w3.org/2000/svg" width="81.306" height="291.025" viewBox="0 0 81.306 291.025">
+                    <path id="bottleJ" data-name="Path 171" d="M10760.3,9780.97s-14.415-109.275-37.905-65.347c-.636,0-20.3,250.894-20.3,250.894s49.2,64.562,80,0C10781.464,9966.517,10760.3,9780.97,10760.3,9780.97Z" transform="translate(-10701.586 -9704.703)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle27">
+                <svg xmlns="http://www.w3.org/2000/svg" width="86.033" height="201.052" viewBox="0 0 86.033 201.052">
+                    <path id="bottleD" data-name="Path 165" d="M2188.486,28.644h-14.491l-5.411,83.389s-23.337,24.141-24.485,29.32,8.788,76.047,8.788,76.047,44.99,25.3,72.362,0c.527.774,4.5-71.333,3.635-76.047s-25.609-29.32-25.609-29.32l-5.916-83.389h-8.873" transform="translate(-2143.49 -28.144)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle28">
+                <svg xmlns="http://www.w3.org/2000/svg" width="111.686" height="201.019" viewBox="0 0 111.686 201.019">
+                    <path id="bottleF" data-name="Path 167" d="M10615.343,9705.152c-9.617-14.795,35.461,0,35.461,0s-14.425,34.382,0,49.794c.6-.612,37.87,13.565,37.87,13.565v117.12l-15.026,12.945-94.974-9.247s4.208-116.5,0-120.818c1.8,0,10.819-9.864,10.819-9.864s22.841,0,25.85-3.7C10615.343,9753.1,10624.956,9719.95,10615.343,9705.152Z" transform="translate(-10577.488 -9698.077)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle29">
+                <svg xmlns="http://www.w3.org/2000/svg" width="150.999" height="201.064" viewBox="0 0 150.999 201.064">
+                    <path id="bottleK" data-name="Path 172" d="M2230.883,102.168h26.626s-11.265,28.484,0,50.507,45.06,37.587,45.06,37.587v97.491s-92.96,32.434-149.516,0c-1.09.992,0-97.491,0-97.491s26.453-15.563,35.271-37.587,0-50.507,0-50.507h42.559" transform="translate(-2152.07 -101.668)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
+               <li class="bottle30">
+                <svg xmlns="http://www.w3.org/2000/svg" width="121.002" height="301.076" viewBox="0 0 121.002 301.076">
+                    <path id="bottleI" data-name="Path 170" d="M2211.414,28.644h-13.852l-8.944,125.083-36.048,43.979V311.777s74.368,37.951,119.612,0c.872,1.161,0-114.071,0-114.071l-36.323-43.979L2226.08,28.644h-14.667" transform="translate(-2152.069 -28.144)" stroke="#707070" stroke-width="1"/>
+                  </svg>
+               </li>
             </ul>
         </section>
-      
        <div class="table">
            <a class="info" href="####">info</a>
            <a class="all" href="####">All</a>
        </div>
+       <!-- 左側畫家介紹 -->
        <aside class="artist">
            <div class="photo"><img src="" alt=""></div>
            <div class="artistName">Giorgio Morandi</div>
            <p>義大利畫家。一生活動主要在博洛尼亞，1907年入博洛尼亞美術學院進修，1930-1956年在此任教。他擅長靜物畫，畫風受到義大利古典畫派、熱里柯、塞尚和立體派的影響。他畫的關於瓶罐器皿的油畫就超過1000張，在其畫作中，這些靜物成為抽象的符號。1948年，獲威尼斯雙年展繪畫獎。本網站色票為畫家常用色彩。</p>
            <div class="web"><a href="https://reurl.cc/MdbexK">維基百科</a></div>
        </aside>
+       <!-- 右側全色卡 -->
        <aside class="colorChips">
            <div class="titleHex">HEX</div>
            <div class="palette">
@@ -358,10 +500,20 @@
                <div class="card"></div>
            </div>
        </aside>
+       <!-- 告知提示 -->
        <aside class="copied"><span>copied</span></aside>
     </div>
 
     <script>
+        // 色票全30色
+        let colors = ['#A4A4A2','CABFD3','#C3C9D9','8996A6','#FEFAEE','BEBCBD',
+                      '#C7B4A6','#9FA5BB','#B1AEB5','#A57D7C','E1E3E2','#C9C5BA',
+                      '#DAD9D7','#7D7185','#F0E4FC','#F1EFE8','#FCEADE','#945259',
+                      '#96A28A','#D6C8AE','#B3AFA3','#B6C5B2','#788976','#C7B8A5',
+                      '#D8D4C9','#F1EDE6','#F1EDE6','#939391','#EEECED','#FFFBF2',
+                      '#9F9687','#DED8D8','#656462','#675450','#EBD2CE','#DDCDD0'];
+        
+
 
     </script>
 </body>
