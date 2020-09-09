@@ -229,7 +229,7 @@ aside.colorChips{
 }
 /* add remove */
 .tada{
-    animation: tada 3s infinite;
+    animation: tada 2s 2;
 }
 .translateX250{
     transform: translateX(-250px);
@@ -366,7 +366,7 @@ section.main{
     width: 100vw;
     height: 100px;
     position: fixed;
-    bottom: 40%;
+    bottom: 45%;
     display: flex;
     justify-content: space-between;
     align-items: center;
